@@ -13,10 +13,34 @@ Vix dico eius nominati cu, ex zril commodo fuisset mea. Habeo adhuc audiam ius n
 
 ```json
 {
-    "cool": 1,
-    "tool": "yes",
-    "joe": "alright"
+    "blog": 1,
+    "cool": "yes",
+    "joe": true
 }
+```
+
+```yaml
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # or master before October 2020
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: helaili/jekyll-action@2.0.5    # Choose any one of the Jekyll Actions
+        with:                                # Some relative inputs of your action
+          token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 Duis id ante elit. Aliquam quis tellus id orci eleifend finibus. Donec consequat justo ligula, eget sodales purus hendrerit at.
