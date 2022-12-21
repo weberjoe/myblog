@@ -2,9 +2,9 @@ name: build sites
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
 
-      - name: checkout master
+      - name: checkout main
         uses: actions/checkout@v2
 
       - name: checkout gh-pages
