@@ -35,6 +35,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+darkmode:
+  enable_dark_mode: true
+  show_dark_mode_toggle_in_header: true 
+  show_dark_mode_toggle_in_bottom: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+  show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
