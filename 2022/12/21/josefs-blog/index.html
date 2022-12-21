@@ -125,11 +125,34 @@
 <h5 id="josefs-blog">Josefs Blog</h5>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"cool"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"tool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"joe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alright"</span><span class="w">
+    </span><span class="nl">"blog"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"cool"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"joe"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Build and deploy Jekyll site to GitHub Pages</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span> <span class="c1"># or master before October 2020</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">github-pages</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/cache@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">vendor/bundle</span>
+          <span class="na">key</span><span class="pi">:</span> <span class="s">$-gems-$</span>
+          <span class="na">restore-keys</span><span class="pi">:</span> <span class="pi">|</span>
+            <span class="s">$-gems-</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">helaili/jekyll-action@2.0.5</span>    <span class="c1"># Choose any one of the Jekyll Actions</span>
+        <span class="na">with</span><span class="pi">:</span>                                <span class="c1"># Some relative inputs of your action</span>
+          <span class="na">token</span><span class="pi">:</span> <span class="s">$</span>
+</code></pre></div></div>
 
 <p>Duis id ante elit. Aliquam quis tellus id orci eleifend finibus. Donec consequat justo ligula, eget sodales purus hendrerit at.</p>
 
