@@ -9,7 +9,7 @@ I can remember about 4 years ago, I started to make HTML templates for ThemeFore
 
 Fortunately, I succeed this time I have leaned and done things I have never done before that keeps me learn new stuff every single day and I want to share with you some tips about starting your own business creating themes like WordPress, Ghost, or Jekyll. I think these tips will work with any online business not only for themes.
 
-### Todo
+### COOL 202020202
 
 Duis id ante elit. Aliquam quis tellus id orci eleifend finibus. Donec consequat justo ligula, eget sodales purus hendrerit at.
 
