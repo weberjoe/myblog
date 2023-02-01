@@ -5,8 +5,8 @@
     <description>🏍 💻 🎸</description>
     <link>https://type-jekyll.aspirethemes.com//</link>
     <atom:link href="https://type-jekyll.aspirethemes.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Dec 2022 10:49:33 +0000</pubDate>
-    <lastBuildDate>Thu, 22 Dec 2022 10:49:33 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 10:32:56 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 10:32:56 +0000</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
 
     
@@ -157,8 +157,13 @@ lacinia in lorem.&lt;/li&gt;
       
         
           <item>
-            <title>About</title>
-            <description>&lt;p&gt;You love Minimalism, and you also love writing, Type is designed for you. Type focus on showing your content in a clean and simple way, focus on images, typography, and white space.&lt;/p&gt;
+            <title>About Josef</title>
+            <description>&lt;h1 id=&quot;yeah&quot;&gt;Yeah&lt;/h1&gt;
+&lt;h2 id=&quot;joe&quot;&gt;Joe&lt;/h2&gt;
+
+&lt;p&gt;You love Minimalism, and you also love writing, Type is designed for you. Type focus on showing your content in a clean and simple way, focus on images, typography, and white space.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
 
@@ -171,6 +176,20 @@ lacinia in lorem.&lt;/li&gt;
     
       
     
+      
+    
+      
+        
+          <item>
+            <title>Other...</title>
+            <description># Other
+
+```bash
+# Nothing to add
+```</description>
+            <link>https://type-jekyll.aspirethemes.com//other.html</link>
+          </item>
+        
       
     
       
